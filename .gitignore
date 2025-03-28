@@ -1,0 +1,8 @@
+# Node.js dependencies
+piframe-backend-nodejs/node_modules/
+
+# TypeScript build output
+piframe-backend-nodejs/dist/
+
+#temp rust backend
+rustpiframe/
