@@ -67,7 +67,7 @@ app.post('/api/images', upload.single('image'), async (req, res) => {
   const file = req.file;
   const {comment} = req.body;
   const currentDate = new Date();
-  const path = 'uploads/';
+  const path = file?.filename;
 
 
   const avg_rgb = await get_avg_rgb(file?.path);
@@ -146,8 +146,11 @@ app.delete('/api/images/:id', async (req, res) => {
 
     const deletedImage = result.rows[0];
 
-    const fs = require('fs');
-    fs.unlink(deletedImage.filepath, (err: any) => {
+    const fs = require('fs');1
+
+    const filetbd = path.join('uploads/', deletedImage.filepath);
+
+    fs.unlink(filetbd, (err: any) => {
       if (err) console.error('Failed to delete file:', err.message);
     });
 
