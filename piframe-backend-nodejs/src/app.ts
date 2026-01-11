@@ -18,7 +18,7 @@ app.use(cors());
 
 //create directory to house images if it doesn't exist
 // Define the uploads folder path
-const uploadsDir = path.join(process.cwd(), 'uploads');
+const uploadsDir = path.join(process.cwd(), 'uploads/');
 
 // Check if the folder exists; if not, create it
 if (!fs.existsSync(uploadsDir)) 
@@ -33,7 +33,7 @@ else
 
 const storage = multer.diskStorage({
   destination: (_req, _file, cb) => {
-    cb(null, 'uploads/');
+    cb(null, uploadsDir);
   },
   filename: (_req, file, cb) => {
     const uniqueName = `${Date.now()}-${file.originalname}`;
