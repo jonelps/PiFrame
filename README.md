@@ -20,5 +20,14 @@ grnd (6)
 
 SPI GPIO 10 (19)
 
-
 https://github.com/Jonel-Poueriet/PiGlow/blob/jonel/pi5Pinout.png
+
+# Software Stack
+
+Postgresql
+
+Express.js
+
+React.js
+
+Node.js
