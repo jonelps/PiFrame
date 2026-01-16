@@ -20,7 +20,7 @@ grnd (6)
 
 SPI GPIO 10 (19)
 
-https://github.com/Jonel-Poueriet/PiGlow/blob/jonel/pi5Pinout.png
+https://github.com/jonelps/PiFrame/blob/master/pi5Pinout.png
 
 # Software Stack
 
